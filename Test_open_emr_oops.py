@@ -15,10 +15,10 @@ class Open_emr():
         select_lan = Select(self.driver.find_element(By.XPATH, "//select[@name='languageChoice']"))
         select_lan.select_by_visible_text("English (Indian)")
         self.driver.find_element(By.ID, "login-button").click()
-
-class Add_Patient(Open_emr):
     def Patient(self):
         return 0
+class Add_Patient(Open_emr):
+
 
     def Patient(self):
         self.driver.find_element(By.XPATH, "//div[@class='menuLabel px-1 dropdown-toggle oe-dropdown-toggle']").click()
